@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SmsText"
+    android:orientation="vertical">
+
+
+    <EditText
+        android:id="@+id/editTextPhoneNo"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        />
+
+    <EditText
+        android:id="@+id/editTextSMS"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:hint="ex) 사고가 발생했습니다. 해당 휴대기기의 위치 조회 바랍니다."/>
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="저장"/>
+</LinearLayout>

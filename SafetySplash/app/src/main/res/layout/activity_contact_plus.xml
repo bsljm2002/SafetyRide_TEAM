@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Contact_plus">
+
+    <TableLayout
+        android:background="#ddfef8f8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_span="2"
+                android:layout_weight="1"
+                android:background="#b682f5"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="아래에 정보를 입력하세요"
+                android:textColor="#fff7f7"
+                android:textSize="20dp" />
+        </TableRow>
+        <TableRow android:padding="3dp">
+            <TextView
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:text="이름 :"
+                android:textSize="18dp" />
+            <EditText
+                android:id="@+id/etname"
+                android:maxLength="10"
+                android:singleLine="true"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:padding="3dp" />
+        </TableRow>
+        <TableRow android:padding="3dp">
+            <TextView
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:text="전화번호 :"
+                android:textSize="18dp" />
+            <EditText
+                android:maxLength="13"
+                android:singleLine="true"
+                android:id="@+id/ettel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:inputType="phone"
+                android:padding="3dp" />
+        </TableRow>
+    </TableLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#ccacf2"
+            android:textColor="#ffffff"
+            android:onClick="onClick"
+            android:text="취소" />
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#ccacf2"
+            android:textColor="#ffffff"
+            android:onClick="onClick"
+            android:text="추가" />
+    </LinearLayout>
+
+</LinearLayout>

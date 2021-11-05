@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+        android:id="@+id/bluebtn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="500dp"
+        android:text="블루투스" />
+
+        <Button
+            android:id="@+id/contact"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="500dp"
+
+            android:text="연락처" />
+        <Button
+            android:id="@+id/mapbtn"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="500dp"
+
+            android:text="GPS" />
+
+
+    </LinearLayout>
+</LinearLayout>

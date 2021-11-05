@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BlueActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:textSize="40sp"
+        android:layout_gravity="center"
+        android:text="낙상 데이터"
+        />
+    <Button
+        android:id="@+id/btnConnect"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:text="연결"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/receivedata"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center_horizontal"
+        android:hint="낙상 데이터 "
+        />
+    <TextView
+        android:id="@+id/zerone"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center_horizontal"
+        android:text="데이터가 1일 경우 사고 발생 "
+        />
+    <EditText
+        android:id="@+id/phoneNumber"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        />
+
+    <EditText
+        android:id="@+id/message"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:hint="ex) 사고가 발생했습니다. 해당 휴대기기의 위치 조회 바랍니다."/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="저장"/>
+
+
+</LinearLayout>
